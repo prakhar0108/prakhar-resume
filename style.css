@@ -295,7 +295,7 @@ section:nth-child(2n + 1) {
     flex-direction: column;
     width: 30%;
     align-items: center;
-    margin-left: 8rem;
+    margin-left: 6rem;
 }
 
 .contact-name form input{
@@ -305,8 +305,8 @@ section:nth-child(2n + 1) {
     border:none;
     border-bottom: 2px solid white;
     height: 2rem;
-    width: 25rem;
-    color:white
+    width: 30rem;
+    color:white;
 }
 .contact-name form button{
     display: inline-block;
@@ -350,5 +350,5 @@ section:nth-child(2n + 1) {
 }
 
 .contact-social-icons li{
-    margin-right:1rem;
+    margin-right:1.5rem;
 }
