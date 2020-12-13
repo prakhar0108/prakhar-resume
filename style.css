@@ -3,6 +3,16 @@ body{
     font-family: sans-serif;
 }
 
+.m0{
+    margin:0;
+}
+.m-blue{
+    color:#2857A4;
+}
+.mb50px {
+    margin-bottom: 50px;
+}
+
 /* Body-header */
 
 #body-header{
@@ -234,6 +244,121 @@ section:nth-child(2n + 1) {
     width: 85%;
 }
 
+/* Work experience */
+
+
+.timeline{
+    position: relative;
+    width: 75%;
+    /* border: 2px solid black; */
+    left: 5px;
+}
+
+.timeline-box{
+    position: relative;
+    width:40%;
+    left: 5%;
+    /* border: 2px solid black; */
+    min-height: 160px;
+    margin: 5px;
+    text-align: right
+    /* background-color: yellow; */
+}
+
+.timeline-logo{
+    position: absolute;
+    width: 4rem;
+    overflow: hidden;
+}
+
+.timeline-logo >img{
+    width: 100%;
+}
+
+.timeline-box:nth-child(2n){
+    left: 53%;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 67%;
+    width:0;
+    border: 1px dashed rgb(124, 159, 189);
+    top:10%;
+    left:50%;
+}
+
+.timeline-traveller{
+    display: block;
+    position:sticky;
+    transform: rotate(91deg);
+    font-size: 2rem;
+    color:#2857A4;
+    top:25%;
+    z-index: 2;
+}
+
+
+
+.timeline-box:nth-child(2n+1)::after{
+    content: "";
+    position:absolute;
+    top: 28%;
+    right: -13.4%;
+    height: 1rem;
+    width: 1rem;
+    background-color: grey;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: "";
+    position:absolute;
+    top: 30%;
+    left: -10.4%;
+    height: 1rem;
+    width: 1rem;
+    background-color: grey;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-container{
+    padding: 0.5rem;
+}
+
+.experience-designation{
+    font-size:1.4rem;
+}
+
+.experience-company-name{
+    margin:5px 0 0;
+    color: darkorange;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.experience-duration{
+    font-size: 1rem;
+    font-weight: 300;
+    color: grey;
+}
+.experience-description{
+    font-size:14px;
+    padding: 2px;
+    color: grey;
+    line-height: 1.25rem;
+}
+
+.text-align-justify{
+    text-align:justify;
+}
+
+#hbti-logo{
+    height: 60px;
+}
+
+
 /* Portfolio */
 
 .portfolio-container{
@@ -269,10 +394,6 @@ section:nth-child(2n + 1) {
     box-shadow: 0 0 20px #74ADC8;
 }
 
-.portfolio-img-container:hover .portfolio-details {
-    background-color: #80808078;
-    color: white;
-}
 
 /* contacts */
 
@@ -287,32 +408,53 @@ section:nth-child(2n + 1) {
 .contact-container{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    flex-direction:row;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-around;
+    width: 80%;
+    /* border: 2px solid beige; */
 }
 
 .contact-name{
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 30rem;
     align-items: center;
-    margin-left: 8rem;
 }
 
-.contact-name form input{
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+
+input{
     display:block;
     margin-top: 2rem;
     background-color:transparent;
     border:none;
     border-bottom: 2px solid white;
     height: 2rem;
-    width: 25rem;
-    color:white
+    width: 100%;
+    color:white;
 }
-.contact-name form button{
-    display: inline-block;
+
+#contact-textarea{
+    margin-top: 2rem;
+    background-color:transparent;
+    border:none;
+    border-bottom: 2px solid white;
+    height: 2rem;
+    max-width: 100%;
+    min-width: 100%;
+    color:white;
+}
+#contact-button{
     border:2px solid white;
     background-color: transparent;
-    margin:3rem 0 0 8rem;
+    margin-top:3rem;
     height: 2.5rem;
     width: 8rem;
     color:white;
@@ -326,17 +468,23 @@ section:nth-child(2n + 1) {
 .contact-details{
     display: flex;
     height: 80%;
-    width: 40%;
+    width: 28rem;
     font-size: 0.9rem;
+    /* border: 2px solid beige; */
+    /* overflow-wrap: break-word ; */
+    justify-content: center;
+    align-items: center;
 }
 .contact-details ul{
     list-style: none;
     color: white;
+    padding-left: 0;
 }
 
 .contact-details ul li{
     display: block;
     margin-top: 1rem;
+    /* border: 2px solid beige; */
 }
 
 .contact-details span{
@@ -350,5 +498,5 @@ section:nth-child(2n + 1) {
 }
 
 .contact-social-icons li{
-    margin-right:1rem;
+    margin-right:1.5rem;
 }
