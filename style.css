@@ -3,6 +3,16 @@ body{
     font-family: sans-serif;
 }
 
+.m0{
+    margin:0;
+}
+.m-blue{
+    color:#2857A4;
+}
+.mb50px {
+    margin-bottom: 50px;
+}
+
 /* Body-header */
 
 #body-header{
@@ -236,10 +246,11 @@ section:nth-child(2n + 1) {
 
 /* Work experience */
 
+
 .timeline{
     position: relative;
     width: 75%;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     left: 5px;
 }
 
@@ -247,12 +258,104 @@ section:nth-child(2n + 1) {
     position: relative;
     width:40%;
     left: 5%;
-    border: 2px solid black;
-    min-height: 150px;
+    /* border: 2px solid black; */
+    min-height: 160px;
     margin: 5px;
+    text-align: right
+    /* background-color: yellow; */
 }
+
+.timeline-logo{
+    position: absolute;
+    width: 4rem;
+    overflow: hidden;
+}
+
+.timeline-logo >img{
+    width: 100%;
+}
+
 .timeline-box:nth-child(2n){
     left: 53%;
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 67%;
+    width:0;
+    border: 1px dashed rgb(124, 159, 189);
+    top:10%;
+    left:50%;
+}
+
+.timeline-traveller{
+    display: block;
+    position:sticky;
+    transform: rotate(91deg);
+    font-size: 2rem;
+    color:#2857A4;
+    top:25%;
+    z-index: 2;
+}
+
+
+
+.timeline-box:nth-child(2n+1)::after{
+    content: "";
+    position:absolute;
+    top: 28%;
+    right: -13.4%;
+    height: 1rem;
+    width: 1rem;
+    background-color: grey;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n)::after{
+    content: "";
+    position:absolute;
+    top: 30%;
+    left: -10.4%;
+    height: 1rem;
+    width: 1rem;
+    background-color: grey;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-container{
+    padding: 0.5rem;
+}
+
+.experience-designation{
+    font-size:1.4rem;
+}
+
+.experience-company-name{
+    margin:5px 0 0;
+    color: darkorange;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.experience-duration{
+    font-size: 1rem;
+    font-weight: 300;
+    color: grey;
+}
+.experience-description{
+    font-size:14px;
+    padding: 2px;
+    color: grey;
+    line-height: 1.25rem;
+}
+
+.text-align-justify{
+    text-align:justify;
+}
+
+#hbti-logo{
+    height: 60px;
 }
 
 
@@ -291,10 +394,6 @@ section:nth-child(2n + 1) {
     box-shadow: 0 0 20px #74ADC8;
 }
 
-.portfolio-img-container:hover .portfolio-details {
-    background-color: #80808078;
-    color: white;
-}
 
 /* contacts */
 
