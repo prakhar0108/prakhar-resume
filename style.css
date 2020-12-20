@@ -439,7 +439,11 @@ section:nth-child(2n + 1) {
     }
 
     #social-icons-list-and-name{
-        margin-top: 10vh;
+        margin-top: 8vh;
+    }
+
+    .horizontal-list{
+        width: 100%;
     }
     
     
