@@ -435,7 +435,13 @@ section:nth-child(2n + 1) {
     
     .nav-menu {
         display: none;
-    } 
+    }
+
+    #social-icons-list-and-name{
+        margin-top: 10vh;
+    }
+    
+    
 }
 
 /* Portfolio */
