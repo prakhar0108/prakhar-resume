@@ -47,7 +47,61 @@ body{
     color:white;
 
 }
+/* nav-bar */
 
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+    top:2%;
+}
+
+.text-right{
+    text-align: right;
+}
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
 .nav-menu{
     transition: color 0.5s border 5s;
 }
@@ -145,7 +199,7 @@ section:nth-child(2n + 1) {
 }
 
 #about-para{
-    margin: 3rem 10rem 0 10rem;
+    margin: 3rem 2rem 0 2rem;
 }
 #about-para p{
     letter-spacing: 1px;
@@ -326,6 +380,7 @@ section:nth-child(2n + 1) {
 
 .timeline-container{
     padding: 0.5rem;
+    /* border:2px solid rgb(129, 80, 80) */
 }
 
 .experience-designation{
@@ -358,7 +413,6 @@ section:nth-child(2n + 1) {
     height: 60px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 572px){
 
     .timeline-divider{
@@ -389,23 +443,31 @@ section:nth-child(2n + 1) {
     
     
 }
-=======
->>>>>>> parent of d86664c... responsive update
 
 /* Portfolio */
 
-.portfolio-container{
+.portfolio-container {
+    /* box-sizing: border-box; */
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    width:80%;
+    padding: 0 50px;
+    margin-bottom: 20px;
     justify-content: space-around;
-    /* background-color: darkorange; */
 }
 
-/* .portfolio-img-container{
-    margin: 1rem;
-} */
+.portfolio-img-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-img-container img {
+    width: 100%;
+    height: 100%;
+}
 
 .portfolio-details {
     transition: all 0.5s ease-in-out;
@@ -418,13 +480,14 @@ section:nth-child(2n + 1) {
     padding: 10px;
 }
 
-
-.portfolio-img-container a img{
-    width: 20rem;
-}
-
 .portfolio-img-container:hover {
     box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-img-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+    width: 100%;
 }
 
 
