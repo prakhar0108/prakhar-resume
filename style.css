@@ -208,7 +208,7 @@ section:nth-child(2n + 1) {
     line-height: 1.5rem;
     color: grey;
 }
-#about-para p a{
+#about-para p span{
     text-decoration: none;
     color:#2857a4;
     font-weight: 700;
