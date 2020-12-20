@@ -358,7 +358,6 @@ section:nth-child(2n + 1) {
     height: 60px;
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 572px){
 
     .timeline-divider{
@@ -389,8 +388,6 @@ section:nth-child(2n + 1) {
     
     
 }
-=======
->>>>>>> parent of d86664c... responsive update
 
 /* Portfolio */
 
