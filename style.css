@@ -200,6 +200,7 @@ section:nth-child(2n + 1) {
 
 #about-para{
     margin: 3rem 2rem 0 2rem;
+    width:70%;
 }
 #about-para p{
     letter-spacing: 1px;
