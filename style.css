@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0px;
     font-family: sans-serif;
@@ -254,15 +256,19 @@ section:nth-child(2n + 1) {
 
 .skill-progress > div{
     border-radius: 20px 0 0 20px;
-    box-shadow: 1px 1px 5px 2px #989882;
+    box-shadow:  1px 1px 5px 2xpx #989882;    
+}
+
+.skill-name{
+    padding: 7px;
 }
 
 .skill-name span{
     color: white;
     font-size: 1rem;
-    margin-left:0.6rem;
+    margin:5rem 0 0 1rem;
     vertical-align: middle;
-    padding-top: 0.8rem;
+    padding-top: 1rem;
 }
 
 .blue{
@@ -475,14 +481,23 @@ section:nth-child(2n + 1) {
 }
 
 .portfolio-details {
-    transition: all 0.5s ease-in-out;
+    display:flex;
+    transition: all 5s ease-in-out;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
+    width: 100%;
     color: transparent;
     text-align: center;
     padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-details p a{
+    /* text-decoration: none; */
+    display: none;
 }
 
 .portfolio-img-container:hover {
@@ -493,6 +508,13 @@ section:nth-child(2n + 1) {
     background-color: #80808078;
     color: white;
     width: 100%;
+}
+
+.portfolio-img-container:hover .portfolio-details p a {
+    display: inline;
+    color: black;
+    font-weight:1000;
+
 }
 
 
